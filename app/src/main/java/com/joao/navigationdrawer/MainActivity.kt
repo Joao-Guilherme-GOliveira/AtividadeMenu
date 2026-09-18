@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_clothes -> openFragment(ClothesFragment())
             R.id.nav_eletronics -> openFragment(EletronicsFragment())
             R.id.nav_food -> Toast.makeText(this,"Alimentos",Toast.LENGTH_SHORT).show()
-            R.id.nav_jewels -> Toast.makeText(this,"Joias", Toast.LENGTH_SHORT).show()
+            R.id.nav_jewels -> openFragment(JewelsFragment())
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
